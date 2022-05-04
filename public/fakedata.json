@@ -1,0 +1,57 @@
+[
+    {
+      "_id": "6271c1e3b0c07df24e93fb6c",
+      "price": "$3,206.09",
+      "img": "https://images.unsplash.com/photo-1616423640778-28d1b53229bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "name": "Camera",
+      "description": "We are sell many products .The camera inside is a product. We have many types of cameras in stock.You can take any type of camera",
+      "quantity":"50",
+      "supplier":" Akash"
+
+    },
+    {
+      "_id": "6271c1e3d2f1c0be01fc7e62",
+      "price": "$3,738.05",
+      "img": "https://img.freepik.com/free-psd/laptop-psd-mockup-with-gradient-led-light_53876-138283.jpg?t=st=1651654111~exp=1651654711~hmac=fbf945d3cfd0b55447f5e4527d08c9470b621b801552d99c48a22befb18b133a&w=740",
+      "name": "Laptop",
+      "description": "We have many types of laptop in stock.If you want to buy then contract us.",
+      "quantity":"50",
+      "supplier":"Sujon"
+    },
+    {
+      "_id": "6271c1e336d2b66522f32d36",
+      "price": "$2,641.55",
+      "img": "https://img.freepik.com/free-psd/gaming-speakers-mockup-front-view_1332-21909.jpg?t=st=1651654221~exp=1651654821~hmac=c8962868d82eabfb28b47a7ab0e89ade5521a750d3615cac377623a50d46028b&w=740",
+      "name":"Computer sound box",
+      "description": "Many sound boxes stock us, Sound box is good quantity. We recommend this products many people likes.",
+      "quantity":"50",
+      "supplier":"Raju"
+    },
+    {
+      "_id": "6271c1e3aa7c0b7eec4f0424",
+      "price": "$1,391.30",
+      "img": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=865&q=80",
+      "name": " Keyboard",
+      "description": "Elit eiusmod Lorem enim minim non occaecat reprehenderit excepteur commodo fugiat dolor laborum. Reprehenderit laboris magna aute duis do commodo sunt. ",
+      "quantity":"50",
+      "supplier":"Sumon"
+    },
+    {
+      "_id": "6271c1e3733693127d78eaf9",
+      "price": "$1,225.62",
+      "img": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80",
+      "name": "Mouse",
+      "description": "Culpa sunt quis sit pariatur et pariatur ex aliqua mollit. Irure officia exercitation do incididunt anim incididunt nisi irure anim.",
+      "quantity":"50",
+      "supplier":"Aslam"
+    },
+    {
+      "_id": "6271c1e3c928a370a270c4a6",
+      "price": "$2,460.77",
+      "img": "https://images.unsplash.com/photo-1545127398-14699f92334b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+      "name": "Headphones",
+      "description": "Ea incididunt ipsum tempor tempor voluptate magna dolore enim anim amet nostrud enim in minim. Reprehenderit non veniam excepteur sit voluptate",
+      "quantity":"50",
+      "supplier":"Shamim"
+    }
+  ]

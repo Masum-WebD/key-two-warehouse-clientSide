@@ -1,0 +1,16 @@
+.product {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 10px 10px 10px 10px rgb(219, 217, 217);
+}
+.update-button {
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(251, 103, 49);
+}

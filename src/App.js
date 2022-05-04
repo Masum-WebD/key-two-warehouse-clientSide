@@ -9,6 +9,7 @@ import Header from './components/Home/Header/Header';
 function App() {
   return (
     <div >
+      
      <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
