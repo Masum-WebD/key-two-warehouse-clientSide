@@ -8,3 +8,8 @@
         grid-template-columns: repeat(1,1fr)
     }
 }
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .products{
+        grid-template-columns: repeat(2,1fr)
+    }
+}
