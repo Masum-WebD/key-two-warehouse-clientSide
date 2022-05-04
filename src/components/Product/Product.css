@@ -4,7 +4,7 @@
   border: 2px solid white;
   border-radius: 20px;
   padding: 10px;
-  box-shadow: 10px 10px 10px 10px rgb(219, 217, 217);
+  box-shadow: 0px 0px 6px 6px rgb(219, 217, 217);
 }
 .update-button {
   border: none;
@@ -12,5 +12,8 @@
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  background-color: rgb(251, 103, 49);
+  background-color: #14cdbb;
+}
+.update-button:hover{
+  background-color: #05ac9b
 }

@@ -1,0 +1,13 @@
+.icon-container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.icon{
+    font-size: 30px;
+    background: #fff;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #00bba7;
+}
