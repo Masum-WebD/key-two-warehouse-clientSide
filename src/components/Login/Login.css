@@ -1,0 +1,17 @@
+.login-container{
+    border:1px solid rgb(215, 214, 214);
+    border-radius: 10px;
+    box-shadow:5px 5px 5px 5px lightgray;
+    padding:20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border:none
+}
+.input-field{
+    border:none;
+    border-bottom:1px solid rgb(215, 214, 214);
+    outline: none;
+}
+.form-container{
+    margin-top:20px
+}

@@ -1,5 +1,4 @@
 import React from "react";
-import { Card, Col, Row } from "react-bootstrap";
 import "./Product.css";
 
 const Product = ({ product }) => {

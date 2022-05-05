@@ -4,7 +4,7 @@ import './Banner.css'
 const Banner = () => {
   return (
       <div className="banner">
-        <h2 className=" text-danger text-center"> this is my main Stock center</h2>
+        <h2 className="banner-des"> Our stock center</h2>
       </div>
   );
 };
