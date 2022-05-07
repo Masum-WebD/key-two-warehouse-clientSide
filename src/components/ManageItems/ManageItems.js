@@ -1,17 +1,29 @@
-import React, { useEffect, useState } from 'react';
+import useProducts from "../Hooks/useProducts";
 const ManageItems = () => {
-    const [products,setProducts]=useState([])
-    useEffect(()=>{
-        fetch('http://localhost:5000/products')
-        .then(res=>res.json())
-        .then(data=>setProducts(data))
-    },[])
-    return (
-        <div>
-            <h2> Manage Items page :{products.name}</h2>
-            
-        </div>
-    );
+  const [products] = useProducts();
+  return (
+    <div>
+      <h1 className="mt-3 text-center fw-bold"> Manage Products</h1>
+      <div className="container products mb-5 mx-auto">
+        {products.map((product) => (
+          <div className="card product g-4">
+            <img style={{ height: "150px" }} src={product.img} alt="" />
+            <h5> Name:{product.name}</h5>
+            <p>{product.description}</p>
+            <h5 className="mt-0">Price:{product.price}</h5>
+            <p className="mt-0">Quantity:{product.quantity}</p>
+            <p className="mt-0">Supplier:{product.supplier}</p>
+            <button
+              
+              className="update-button text-black text-decoration-none"
+            >
+              Delete product
+            </button>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default ManageItems;
