@@ -3,12 +3,10 @@ import { Link as button, useNavigate } from "react-router-dom";
 import {useParams } from 'react-router-dom';
 import "./Product.css";
 
-const Product = ({ product }) => {
-  const {inventoryId}=useParams()
+const Product = ({product }) => {
   const { _id,img, name, description, price, supplier, quantity } = product;
  const  navigate=useNavigate()
   const handleInventory=(id)=>{
-    // navigate(`/inventory`)
     navigate(`/inventory/${id}`)
   }
   return (
