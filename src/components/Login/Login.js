@@ -4,7 +4,7 @@ import {
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
 } from "react-firebase-hooks/auth";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import auth from "../../firebase.init";
 
@@ -18,6 +18,8 @@ const Login = () => {
   const [sendPasswordResetEmail, sending, errorResrt] =
     useSendPasswordResetEmail(auth);
   const navigate = useNavigate();
+  const location = useLocation()
+  let from = location.state?.from?.pathname || "/";
 
   let errorMessage;
   if (error) {
@@ -26,6 +28,9 @@ const Login = () => {
         <p style={{color: 'red'}}>Error: {error?.message}</p>
       </div>
    
+  }
+  if(user){
+    navigate(from, { replace: true });
   }
 
   const handleLogin = async (e) => {
@@ -60,6 +65,7 @@ const Login = () => {
             name="email"
             type="email"
             placeholder="Enter email"
+            required
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -68,6 +74,7 @@ const Login = () => {
             type="password"
             name="password"
             placeholder="Password"
+            required
           />
         </Form.Group>
         <Button

@@ -2,7 +2,7 @@ import React from "react";
 import google from "../../../Images/social/google.png"
 import github from "../../../Images/social/github.png"
 import facebook from "../../../Images/social/facebook.png"
-import { useSignInWithEmailAndPassword, useSignInWithFacebook, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import {useSignInWithFacebook, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from "../../../firebase.init";
 import { useNavigate } from "react-router-dom";
 
