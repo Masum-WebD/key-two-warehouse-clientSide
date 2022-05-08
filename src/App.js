@@ -14,6 +14,7 @@ import MyItem from './components/MyItem/MyItem';
 import AddItem from './components/AddItem/AddItem';
 import ManageItems from './components/ManageItems/ManageItems';
 import Blog from './components/Blogs/Blog';
+import About from './components/About/About';
 
 function App() {
   return (
@@ -37,6 +38,8 @@ function App() {
        }
         ></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
+        
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

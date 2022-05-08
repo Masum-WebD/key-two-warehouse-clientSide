@@ -5,7 +5,7 @@ import './ProductSell.css'
 
 const ProductSell = () => {
   return (
-    <div>
+    <div id="productSell">
       <div className="container icon-container">
         <div className=' card me-2'>
           <FontAwesomeIcon className='icon' icon={faTruck}></FontAwesomeIcon>
