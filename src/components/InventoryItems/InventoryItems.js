@@ -42,28 +42,27 @@ const InventoryItems = () => {
         })
 }
 
-const handleAddQuantity=(id )=>{
+const handleAddQuantity =(id )=>{
   const url = `http://localhost:5000/products/${id}`;
+  const currentQuantity = parseInt(numberRef.current.value)
+  let previousQuantity = parseInt(product.quantity)
+    if (previousQuantity > 0) {
 
-  const countQuantity =numberRef.current.value
-  // const inputNumberQuantity =parseInt(countQuantity)
-  console.log(countQuantity);
-    if (product.quantity > 0) {
-        product.quantity = product.quantity +countQuantity;
+        product.quantity = previousQuantity + currentQuantity;
         setProduct({ ...product });
 
     }
     else {
         alert('add product');
     }
-    const quantities =product.quantity;
+    const quantities = product.quantity;
     console.log(quantities);
     //update Quantity
 
     fetch(url, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ quantities: parseInt(quantities) })
+        body: JSON.stringify({ quantities: quantities })
     })
         .then(res => res.json())
         .then(data => {
@@ -86,7 +85,8 @@ const handleAddQuantity=(id )=>{
               alt=""
             />
             <h5> Name:{product.name}</h5>
-            <h5 className="mt-0">Price:{product.price}</h5>
+            <p className="mt-0">{product.description}</p>
+            <h5 className="mt-0">Price:${product.price}</h5>
             <p className="mt-0">Quantity:{product.quantity}</p>
             <p className="mt-0">Supplier:{product.supplier}</p>
             <p className='sold'>Sold</p>
@@ -94,8 +94,11 @@ const handleAddQuantity=(id )=>{
           </div>
         </div>
         <div className="col-md-6">
-          <input ref={numberRef} type="text" placeholder='Add Quantity' />
-          <button onClick={()=>handleAddQuantity(product._id)} className='btn btn-primary'>Add Quantity</button>
+         <form onSubmit={()=>handleAddQuantity(product._id)} >
+         <input ref={numberRef} type="number" placeholder='Add Quantity' /><br />
+         
+          <button  className='btn btn-primary mt-2'>Add Quantity</button>
+         </form>
         </div>
       </div>
       <ToastContainer />

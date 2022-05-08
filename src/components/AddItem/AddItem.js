@@ -2,15 +2,16 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
+import { useNavigate } from 'react-router-dom';
 
 
 
 const AddItem = () => {
     const { register, handleSubmit } = useForm();
-    const [user]= useAuthState(auth)
+    const navigate=useNavigate()
 
     const onSubmit = (data) => {console.log(data)
-        const email =user?.email
+ 
         fetch(`http://localhost:5000/products/`,{
             method: 'POST',
             headers: { 'Content-Type':'application/json' },
@@ -21,6 +22,7 @@ const AddItem = () => {
             console.log(result);
             
         })
+        navigate('/')
     
     
     }

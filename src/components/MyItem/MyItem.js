@@ -6,7 +6,7 @@ const MyItem = () => {
   const [user]=useAuthState(auth)
   const [addItem,setAddItem]=useState([])
   useEffect(()=>{
-    const email =user.email
+    const email =user?.email
       fetch(`http://localhost:5000/addProducts?email=${email}`)
       .then(res=>res.json())
       .then(data=>setAddItem(data))

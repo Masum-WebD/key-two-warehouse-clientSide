@@ -14,7 +14,7 @@ const Product = ({product }) => {
       <img style={{height:'150px'}} src={img} alt="" />
       <h5> Name:{name}</h5>
       <p>{description}</p>
-      <h5 className='mt-0'>Price:{price}</h5>
+      <h5 className='mt-0'>Price:${price}</h5>
       <p className='mt-0'>Quantity:{quantity}</p>
       <p className='mt-0'>Supplier:{supplier}</p>
     <button  onClick={()=>handleInventory(_id)} className='update-button text-black text-decoration-none'>Update product</button>
