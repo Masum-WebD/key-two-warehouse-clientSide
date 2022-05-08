@@ -38,7 +38,7 @@ const Register = () => {
           Login
         </Button>
       </Form>
-      <p className='text-center'>Are you new? <Link to='/login'  className='text-danger text-decoration-none pe-auto'>Please login</Link></p>
+      <p className='text-center'>Are you new? <Link to='/login'  className='text-danger text-decoration-none pe-auto'>Please Register</Link></p>
       <SocialMedia></SocialMedia>
       
     </div>

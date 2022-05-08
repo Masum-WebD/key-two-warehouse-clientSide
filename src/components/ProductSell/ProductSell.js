@@ -1,11 +1,11 @@
-import { faBriefcase, faHandshake, faSackDollar, faTruck, faTruckRampBox } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faHandshake, faSackDollar, faTruck,  } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import './ProductSell.css'
 
 const ProductSell = () => {
   return (
-    <div id="productSell">
+    <div>
       <div className="container icon-container">
         <div className=' card me-2'>
           <FontAwesomeIcon className='icon' icon={faTruck}></FontAwesomeIcon>
