@@ -28,7 +28,7 @@ const ManageItems = () => {
       <h1 className="mt-3 text-center fw-bold"> Manage Products</h1>
       <div className="container products mb-5 mx-auto">
         {products.map((product) => (
-          <div className="card product g-4">
+          <div key={product._id} className="card product g-4">
             <img style={{ height: "150px" }} src={product.img} alt="" />
             <h5> Name:{product.name}</h5>
             <p>{product.description}</p>
