@@ -34,7 +34,7 @@ const Footer = () => {
         </Link>
       </p>
       <p className="text-white text-center ">
-        Copyright © 2022 Programming-hero.com
+        Copyright © 2022 key-two-telecom.com
       </p>
     </div>
   );
