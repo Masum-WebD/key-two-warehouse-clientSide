@@ -1,4 +1,12 @@
 # Getting Started with Create React App
+#Live site link:https://superb-babka-b4fcee.netlify.app/
+
+# How to doing this project:
+1.I am useing react js
+2.firebase using
+3.firebase hooks using for authentication
+4.use mongodb for backend
+5.And last hosting
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
